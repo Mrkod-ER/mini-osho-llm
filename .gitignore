@@ -1,0 +1,65 @@
+# =============================================================================
+# Python & Bytecode
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# =============================================================================
+# Virtual Environments (DO NOT commit - can be 2GB+ with PyTorch)
+# =============================================================================
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# =============================================================================
+# PyTorch Model Checkpoints & Weights (large binary files)
+# =============================================================================
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.safetensors
+# Specific checkpoints generated in this repo:
+mini_osho_llm_checkpoint.pt
+mini_llm_bpe_checkpoint.pt
+
+# =============================================================================
+# Datasets & Extracted Text (regenerated on demand or downloaded)
+# =============================================================================
+*.pdf
+shakespeare.txt
+# If you want to commit book_of_secrets.txt to git, comment out the line below:
+book_of_secrets.txt
+
+# =============================================================================
+# Generated Plots & Visualizations
+# =============================================================================
+*.png
+*.jpg
+*.jpeg
+*.svg
+mini_osho_llm_loss.png
+mini_llm_bpe_loss.png
+
+# =============================================================================
+# Jupyter Notebook Checkpoints
+# =============================================================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# =============================================================================
+# Operating System & IDE Files
+# =============================================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE configs (optional, uncomment if you want to keep settings private)
+# .vscode/
+# *.code-workspace
